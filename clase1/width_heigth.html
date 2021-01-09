@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <title>tipografia!</title>
+    <style>
+        h1{
+            background-color:red;
+            text-align: center;
+          }
+          [class|="col"]{
+            <!-- border: .5px solid black; -->
+            background-color: rgb(255, 255, 255);
+          }
+          .container{
+            border: .2px solid red;
+          }
+          .row{
+            padding-top: 5px;
+            border-bottom: 0.1px solid blue;
+          }
+          .azul{
+              background-color: brown;
+          }
+    </style>
+  </head>
+  <body>
+
+    <h1>ancho alto (sizing)</h1>
+    <div class="container"> 
+        <div >
+            <h2>with - Ancho</h2>
+            <div class="w-25    p-3 bg-danger" >Width 25%</div> 
+            <div class="w-50    p-3 bg-primary" >Width 50%</div>
+            <div class="w-75    p-3 bg-secondary" >Width 75%</div>
+            <div class="w-100   p-3 bg-warning" >Width 100%</div>
+            <div class="w-auto  p-3 bg-white" >Width auto</div>
+        </div> 
+
+        <h2>height - Alto</h2>
+        <!-- <div class="col-12"> -->
+            <div class="row" style="height: 100px;">            
+                <div class="h-25   d-inline-block   col-2 bg-primary"  >Height 25%</div>
+                <div class="h-50    d-inline-block   col-2 bg-secondary" >Height 50%</div>
+                <div class="h-75    d-inline-block   col-2 bg-success"   >Height 75%</div>
+                <div class="h-100   d-inline-block   col-2 bg-warning"   >Height 100%</div>
+                <div class="h-auto  d-inline-block   col-2 bg-info"      >Height auto</div>
+                <div class="mh-100  d-inline-block   col-2 bg-warning "   >Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Quod nihil velit modi quasi et! 
+                    Aliquid asperiores quas.</div>
+            </div>
+        <!-- </div> -->
+        <div class="row">
+            <h2>max-height | max-with </h2>
+            <!-- max-height: 100% - mh-100 | max-with: 100% - mw-100 -->
+            <img src="../img/9.png" class="h-50 w-75 mw-100 mh-100" alt="img">
+        </div>
+        
+        <div class="row"> 
+            
+        </div>        
+    </div>
+    <div class="container-fluid">
+        <h2>Relativo al viewport (body)</h2>
+        <div class="row">
+            <div class="min-vw-100  bg-danger text-center">Min ANCHO Panalla</div>
+            <div class="min-vh-100  bg-warning text-center" >Min ALTO Panalla</div>
+            <div class="vw-100      bg-danger text-center">Width 100vw</div>
+            <div class="vh-100      bg-warning text-center">Height 100vh</div>
+        </div>
+    </div>
+    
+      <!-- Option 1: Bootstrap, Popper -->
+    <script src="../bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>  
+    <script src="../jquery.js"></script>
+  </body>
+</html>
+
