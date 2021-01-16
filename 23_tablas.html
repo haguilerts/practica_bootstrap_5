@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+
+    <title>tablas</title>
+    <style>
+        h1 {
+            background-color: red;
+            text-align: center;
+        }
+        
+        [class|="col"] {
+            border: .5px solid black;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .container {
+            border: .2px solid red;
+            margin-bottom: 2em;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .row {
+            padding-top: 5px;
+            border-bottom: 0.1px solid blue;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <h1>tablas</h1>
+        <div class="row">
+            <div class="row col-6">
+                <h2>table-active</h2>
+                <table class="table">
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td class="table-active">Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td class="table-active"> Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Casilledo de 2 Renglones .</td>
+                            <td class="table-active">@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row col-6">
+                <table class="table">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">0)</th>
+                            <th scope="col">class</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-primary">
+                            <th scope="row">1</th>
+                            <td>table-primary</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <th scope="row">2</th>
+                            <td>table-secondary</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <th scope="row">3</th>
+                            <td colspan="2">table-danger</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <th scope="row">4</th>
+                            <td>table-warning</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr class="table-info">
+                            <th scope="row">5</th>
+                            <td>table-info</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr class="table-light">
+                            <th scope="row">6</th>
+                            <td colspan="2">table-light</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-dark">
+                            <th scope="row">7)</th>
+                            <td colspan="2">table-dark</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="row col-6">
+                <h2>table-striped</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-dark</h2>
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-dark table-striped</h2>
+                <table class="table table-dark table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-success table-striped</h2>
+                <table class="table table-success table-striped">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-hover</h2>
+                <table class="table table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-dark table-hover</h2>
+                <table class="table table-dark table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-striped table-hover</h2>
+                <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-striped table-hover</h2>
+                <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-bordered</h2>
+                <table class="table table-bordered border-primary">
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td class="table-active">Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td class="table-active"> Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Casilledo de 2 Renglones .</td>
+                            <td class="table-active">@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-borderless</h2>
+                <table class="table table-borderless">
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td> Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Casilledo de 2 Renglones .</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-dark table-borderless</h2>
+                <table class="table table-dark table-borderless">
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td> Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Casilledo de 2 Renglones .</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table table-dark / table-sm</h2>
+                <table class="table table-sm">
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-dark table-sm">
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>align-bottom</h2>
+                <table class="table table-sm table-dark ">
+                    <!-- <div class="table-responsive"> -->
+                    <table class="table align-middle table-info">
+                        <thead>
+                            <tr class="table-active">
+                                <th scope="col">#</th>
+                                <th scope="col">inf</th>
+                                <th scope="col">central</th>
+                                <th scope="col">sup</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-bottom">
+                                <th scope="row">1</th>
+                                <td class="align-bottom">align_bottom</td>
+                                <td class="align-middle">centreado</td>
+                                <td class="align-top">align_top</td>
+                                <td>Lorem, ipsum dolor sit amet Magnam, error soluta! Illum labore similique fuga? Cumque quod exercitationem placeat quo quos quas nulla officiis, adipisci pariatur corrupti. Corporis, ex itaque!Unde ipsa numquam laudantium
+                                    es ut officia sint. Dolorum, deserunt eaque! Exercitationem, vel!
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- </div> -->
+                </table>
+            </div>
+            <div class="col-6">
+                <h2> una tabla dentro de otra</h2>
+                <table class="table table-striped table-primary caption-top">
+                    <caption>lista de usuario</caption>
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1-</th>
+                            <td>Encabezado</td>
+                            <td>Encabezado</td>
+                            <td>@Encabezado</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4">
+                                <table class="table table-striped table-warning">
+                                    <thead>
+                                        <tr class="table-active">
+                                            <th scope="col">A</th>
+                                            <th scope="col">B</th>
+                                            <th scope="col">C</th>
+                                            <th scope="col">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">2-</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table pie de pag tfoot</h2>
+                <table class="table ">
+                    <caption>subtitulo 14/01/2021 20:52</caption>
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td> Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">tfoot</th>
+                            <td>pie de pag.</td>
+                            <td>pie de pag</td>
+                            <td>pie de pag</td>
+
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-6">
+                <h2>table-responsive{-sm|-md|-lg|-xl|-xxl}.</h2>
+                <table class="table-responsive-lg table-bordered ">
+                    <caption>subtitulo 14/01/2021 20:52</caption>
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            <th scope="col">First</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td> Thornton</td>
+                            <td>@fat</td>
+                            <td>Jacob</td>
+                            <td> Thornton</td>
+                            <td>@fat</td>
+                            <td>Jacob</td>
+
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">tfoot</th>
+                            <td>pie de pag.</td>
+                            <td>pie de pag</td>
+                            <td>pie de pag</td>
+                            <td>pie de pag.</td>
+                            <td>pie de pag</td>
+                            <td>pie de pag</td>
+                            <td>pie de pag.</td>
+
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-6">
+                <table class=" table table-responsive-lg  ">
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            <th scope="col">First</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                        </tr>
+                        <tr>
+                            <table class=" table table-responsive-sm table-primary ">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                        <th scope="col">First</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6"></div>
+
+        </div>
+
+
+
+    </div>
+    <div class="row">
+        <div class="row col-12">
+
+        </div>
+
+    </div>
+    <div class="row"></div>
+    </div>
+    <!-- Option 1: Bootstrap, Popper -->
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="jquery.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>

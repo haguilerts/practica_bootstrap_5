@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+
+    <title>alert</title>
+    <style>
+        h1 {
+            background-color: red;
+            text-align: center;
+        }
+        
+        [class|="col"] {
+            /*border: .5px solid black;*/
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .container {
+            border: .2px solid red;
+            margin-bottom: 2em;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        body {
+            position: relative;
+        }
+        
+        .row {
+            padding-top: 5px;
+            border-bottom: 0.1px solid blue;
+        }
+        
+        .cuerpo {
+            overflow-y: auto;
+        }
+        
+        .max {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+
+<body data-spy="scroll" data-target="#id">
+    <div class="container-fluid">
+        <h1>modal - alert</h1>
+        <div class="row col-12">
+            <h2 class="mt-5">Link de Navagacion</h2>
+            <div class="col-3">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-1">
+                <nav class="nav flex-column">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </nav>
+            </div>
+            <div class="col-4">
+                <ul class="nav nav-tabs nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolo. Tempora recusandae ex voluptas perferendis consequatur unde tenetur, iste dolorem quae explicabo, est tempore quas earum nemo distinctio consectetur rem quaerat quam? Perspiciatis, fugit similique vitaeconsequuntur,
+                        ullam invendis.</div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet cm eligendi tempore neque cum modi molestiae praesentium illo, fugiat, veritatis fuga incidunt nemo quo voluptas, aspernatur nisi. Fugit ea deleniti eos rerum dolor ullam inventore reprehenderit ratione et
+                        recusandae perspiciatis dolores.</div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><img src="img/lobo_h.png" alt="lobo" class="img-fluid"></div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <ul class="nav nav-tabs nav-pills mb-3" id="myTab1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab1" data-bs-toggle="tab" href="#home1" role="tab" aria-controls="home" aria-selected="true">Img Home</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab1" data-bs-toggle="tab" href="#profile1" role="tab" aria-controls="profile" aria-selected="false">img 2</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="contact-tab1" data-bs-toggle="tab" href="#contact1" role="tab" aria-controls="contact" aria-selected="false">img3</a>
+                    </li>
+                </ul>
+                <div class="rew col-12 d-flex align-items-start">
+                    <div class="col-2 nav flex-column nav-pills me-3" id="img" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link" id="img1" data-bs-toggle="pill" href="#imga1" role="tab" aria-controls="v-pills-home" aria-selected="false">img 1</a>
+                        <a class="nav-link" id="img2" data-bs-toggle="pill" href="#imga2" role="tab" aria-controls="v-pills-profile" aria-selected="false">img 2</a>
+                        <a class="nav-link" id="img3" data-bs-toggle="pill" href="#imga3" role="tab" aria-controls="v-pills-messages" aria-selected="false">img 3</a>
+                        <a class="nav-link" id="img4" data-bs-toggle="pill" href="#imga4" role="tab" aria-controls="v-pills-settings" aria-selected="false">img 4</a>
+                    </div>
+                    <div class="col-8 tab-content" id="myTabContent1">
+                        <div class="tab-pane fade show active" id="home1" role="tab" aria-labelledby="home-tab1"><img src="img/paisaje_h.png" alt="lobo" class="img-fluid"></div>
+                        <div class="tab-pane fade" id="profile1" role="tab" aria-labelledby="profile-tab1"> <img src="img/lobo_h.png" alt="lobo" class="img-fluid"></div>
+                        <div class="tab-pane fade" id="contact1" role="tab" aria-labelledby="contact-tab1"> <img src="img/iry_h0.jpg" alt="lobo" class="img-fluid"></div>
+
+                        <div class="tab-pane fade" id="imga1" role="tabpanel" aria-labelledby="img1"> <img src="img/iry_h0.jpg" alt="lobo" class="img-fluid"></div>
+                        <div class="tab-pane fade" id="imga2" role="tabpanel" aria-labelledby="img2"><img src="img/iry_h1.jpg" alt="lobo" class="img-fluid"></div>
+                        <div class="tab-pane fade" id="imga3" role="tabpanel" aria-labelledby="img3"> <img src="img/iry_h3.jpg" alt="lobo" class="img-fluid"></div>
+                        <div class="tab-pane fade" id="imga4" role="tabpanel" aria-labelledby="img4"> <img src="img/iry_h4.jpg" alt="lobo" class="img-fluid"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active bg-primary text-white" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sequi soluta quidem sit culpa reprehenderit, possimus suscipit voluptas nesciunt nulla! Omnis magnam voluptas praesentium. Iure voluptates iste eum iusto recusandae.</div>
+                        <div class="tab-pane fade bg-danger text-white" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi harum nam id quidem ipsam doloremque soluta, molestias repellendus quisquam quis animi culpa alias et amet eaque nihil tenetur. Similique, molestiae?</div>
+                        <div class="tab-pane fade bg-info text-white" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sequi! Voluptatem perspiciatis est aut illo maxime expedita aperiam delectus eveniet labore, tempore illum adipisci, nihil ut dolore. Tenetur, repudiandae? Perspiciatis!</div>
+                        <div class="tab-pane fade bg-secondary text-white" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, obcaecati nemo, laborum omnis iste id quae sequi itaque deserunt numquam officia pariatur ipsum quo, porro saepe autem a consectetur labore.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <h1>seguimiento</h1>
+            <a href="25_scrollspy_menuSup.html"> munu superior</a>
+            <a href="25_scrollspy_menuLeft.html"> munu laterial</a>
+
+
+
+            <div class=" row col-12">
+                <div id="id" class="list-group col-3">
+                    <a class="list-group-item list-group-item-action active" href="#a">Item 1</a>
+                    <a class="list-group-item list-group-item-action" href="#b">Item 2</a>
+                    <a class="list-group-item list-group-item-action" href="#c">Item 3</a>
+                    <a class="list-group-item list-group-item-action" href="#d">Item 4</a>
+                </div>
+                <div class="col-8 cuerpo" data-spy="scroll" data-bs-target="#list" data-bs-offset="0" tabindex="0">
+                    <h4 id="a">Item 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti consequuntur ad quae nam eaque at consectetur, adipisci aspernatur harum natus officia debitis totam autem, magnam accusantium exercitationem beatae quaerat incidunt!...</p>
+                    <h4 id="b">Item 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptate, animi impedit dolor debitis consectetur labore qui est. Distinctio atque cum quas vel culpa sed reprehenderit, pariatur quam illum ullam....</p>
+                    <h4 id="c">Item 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cumque reprehenderit obcaecati quo? Quos dicta, mollitia quibusdam, soluta possimus voluptatibus explicabo libero, corrupti amet eius blanditiis est nostrum earum deserunt?...</p>
+                    <h4 id="d">Item 4</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, sit est nobis porro temporibus quidem delectus ratione nam praesentium inventore, odio illo! Molestias doloribus neque quaerat laboriosam officiis cum vitae?...</p>
+                </div>
+            </div>
+            <div class="col-5"></div>
+            <div class="col-5"></div>
+
+
+        </div>
+        <div class="row"></div>
+    </div>
+    <!-- Option 1: Bootstrap, Popper -->
+
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="jquery.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script>
+        /*  var dataSpyList = [].slice.call(document.querySelectorAll('[data-spy="scroll"]'))
+                                                                                                                                                                                        dataSpyList.forEach(function(dataSpyEl) {
+                                                                                                                                                                                            bootstrap.ScrollSpy.getInstance(dataSpyEl)
+                                                                                                                                                                                                .refresh()
+                                                                                                                                                                                        })
+                                                                                                                                                                                        window.addEventListener("resize", ResizeWindow);*/
+
+        function ResizeWindow() {
+            var dataSpyList = [].slice.call(document.querySelectorAll('[data-spy="scroll"]'));
+
+            dataSpyList.forEach(function(dataSpyElement) {
+                bootstrap.ScrollSpy.getInstance(dataSpyElement).refresh();
+            });
+        }
+    </script>
+</body>
+
+</html>

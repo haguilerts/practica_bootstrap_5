@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <title>card</title>
+    <style>
+        h1 {
+            background-color: red;
+            text-align: center;
+        }
+        
+        [class|="col"] {
+            border: .5px solid black;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .container {
+            border: .2px solid red;
+            margin-bottom: 2em;
+        }
+        
+        .row {
+            padding-top: 5px;
+            border-bottom: 0.1px solid blue;
+        }
+        
+        .altura {
+            height: 5em;
+            text-align-last: center;
+        }
+        
+        .imgcss {
+            height: 8em;
+            width: auto;
+            background-image: url(img/9.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 1em 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>collapse</h1>
+    <div class="container ">
+        <div class="row">
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Enlace con href
+                </a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Button con data-bs-target
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    contenido de mostrar..
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">imagen</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">contenido </button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3">ambos intercalados</button>
+            </p>
+            <div class="row">
+                <div class="col-3">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            <img src="img/paisaje_h.png" alt="img" class="card-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            33333Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quis eligendi quae quisquam, pariatur explicabo voluptatum nobis voluptates ipsam exercitationem et veritatis numquam dolore quos aut. Ex fuga qui maiores. Eum neque vel pariatur
+                            blanditiis at voluptas in, quia mollitia dignissimos tenetur incidunt excepturi id saepe, esse distinctio quae, nulla quod hic cupiditate explicabo aliquam consequatur. Quam laboriosam ipsum incidunt. Provident, aliquid porro
+                            harum praesentium, expedita autem suscipit quibusdam eius nulla enim optio unde, voluptate qui odit quasi dolore nobis asperiores totam dolor. Vel cupiditate asperiores
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <img src="img/paisaje_h.png" alt="img" style="width: 100%;">
+                        <h3 class="card-header">Bienvenido</h3>
+                        <div class="card card-body">
+                            <p class="card-text">expedita autem suscipit quibusdam eius nulla enim optio unde, voluptate qui odit quasi dolore nobis asperiores totam dolor. Vel cupiditate asperiores</p>
+                        </div>
+                        <div class="card-footer"> 10/01/2021 22:14</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap, Popper -->
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="jquery.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+</body>
+
+</html>

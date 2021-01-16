@@ -1,47 +1,53 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->    
-    <link rel="stylesheet" href="../bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
     <title>float!</title>
     <style>
-        h1{
-            background-color:red;
+        h1 {
+            background-color: red;
             text-align: center;
-          }
-          [class|="col"]{
-            <!-- border: .5px solid black; -->
-            background-color: rgb(255, 255, 255);
-          }
-          .container{
+        }
+        
+        [class|="col"] {
+            <!-- border: .5px solid black;
+            -->background-color: rgb(255, 255, 255);
+        }
+        
+        .container {
             border: .2px solid red;
-          }
-          .row{
+        }
+        
+        .row {
             padding-top: 5px;
             border-bottom: 0.1px solid blue;
-          }
-          .azul{
-              background-color: brown;
-          }
-          img{
-              height: 4em;
-              width: 32px;
-          }
-          
+        }
+        
+        .azul {
+            background-color: brown;
+        }
+        
+        img {
+            height: 4em;
+            width: 32px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>float</h1>
-    <div class="container">          
+    <div class="container">
         <div class="col-12">
-          <div class="float-start bg-primary text-white">Float inicio respecto al viewport --</div> <br>
-          <div class="float-end   bg-secondary text-white">Float final respecto al viewport --</div> <br>
-          <div class="float-none  bg-warning">No flote en todos los tamaños de ventana gráfica</div> 
+            <div class="float-start bg-primary text-white">Float inicio respecto al viewport --</div> <br>
+            <div class="float-end   bg-secondary text-white">Float final respecto al viewport --</div> <br>
+            <div class="float-none  bg-warning">No flote en todos los tamaños de ventana gráfica</div>
         </div>
         <br>
         <div class="col-12 border border-top">
@@ -51,12 +57,13 @@
             <div class="float-xl-end">Float start on viewports sized XL (extra-large) or wider</div><br>
         </div>
     </div>
-    
-      <!-- Option 1: Bootstrap, Popper -->
-    <script src="../bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>  
-    <script src="../jquery.js"></script>
-  </body>
+
+    <!-- Option 1: Bootstrap, Popper -->
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="jquery.js"></script>
+</body>
+
 </html>
 <!-- 
             .float-start

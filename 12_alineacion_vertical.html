@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <title>alineacion vertical</title>
+    <style>
+        h1 {
+            background-color: red;
+            text-align: center;
+        }
+        
+        [class|="col"] {
+            border: .5px solid black;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .container {
+            border: .2px solid red;
+        }
+        
+        .row {
+            padding-top: 5px;
+            border-bottom: 0.1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>alineacion vertical</h1>
+    <div class="container">
+        <h2>Es aplicablea: inline, inline-block, inline-table y table .</h2>
+        <div class="row d-inline-block">
+            <span class="align-baseline">base</span>
+            <span class="align-top">superior</span>
+            <span class="align-middle">medio</span>
+            <span class="align-bottom">inferior</span>
+            <span class="align-text-top">texto-sup</span>
+            <span class="align-text-bottom">texto-inf</span>
+        </div>
+        <div class="row">
+            <table style="height: 100px; border:1px solid red;">
+                <tbody>
+                    <tr>
+                        <td class="align-baseline border border-2">baseline</td>
+                        <td class="align-top border border-2">top</td>
+                        <td class="align-middle border border-2">middle</td>
+                        <td class="align-bottom border border-2">bottom</td>
+                        <td class="align-text-top border border-2">text-top</td>
+                        <td class="align-text-bottom border border-2">text-bottom</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <h2>caja mostrar(visible) y ocultar(invisible)</h2>
+            <div class="visible"> visible </div>
+            <div class="invisible"> invisible</div>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+    </div>
+
+    <!-- Option 1: Bootstrap, Popper -->
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="jquery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <title>text!</title>
+    <style>
+        h1 {
+            background-color: red;
+            text-align: center;
+        }
+        
+        [class|="col"] {
+            border: .5px solid black;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .container {
+            border: .2px solid red;
+        }
+        
+        .row {
+            padding-top: 5px;
+            border-bottom: 0.1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>text</h1>
+    <div class="container">
+        <div class="row">
+            <h2>Alineación del texto </h2>
+            <div class="col-12 bg-secondary p-3 my-1">
+                <p class=" text-white       text-start">Start aligned text on all viewport sizes.</p>
+                <p class=" text-white-50    text-center">Center aligned text on all viewport sizes.</p>
+                <p class=" text-warning     text-end">End aligned text on all viewport sizes.</p>
+            </div>
+            <h2>text-sm/md/lg/xl</h2>
+            <div class="col-12 bg-primary p-3 my-1">
+                <p class=" text-sm-center">Start aligned text on viewports sized SM (small) or wider.</p>
+                <p class=" text-md-center">Start aligned text on viewports sized MD (medium) or wider.</p>
+                <p class=" text-lg-center">Start aligned text on viewports sized LG (large) or wider.</p>
+                <p class=" text-xl-center">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Ajuste y desbordamiento de texto (text-wrap)/(text-nowrap)</h2>
+            <div class="badge bg-dark" style="width: 8rem; height: 2em;">
+                Este texto debe desbordar o ajusta al contenedor al padre.
+            </div>
+            <div class="badge bg-success text-wrap" style="width: 7rem; height: 7rem;">
+                Este texto debe ajustarse (badge). - Este texto debe ajustarse para abajo (wrap).
+            </div>
+            <div class="text-nowrap bg-danger " style="width: 8rem; height: 2em;">
+                Este texto debe desbordar o ajusta al contenedor al padre.
+            </div>
+            <br>
+
+
+        </div>
+        <div class="row">
+            <h2>Salto de palabra</h2>
+            <p class="text-break">1) la_palabra_anidada_no_sobre_sale_del_contenedor_por_text_break:__(mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm) word-wrap: break-wordy word-break: break-word</p>
+            <p>2) (mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm)</p>
+        </div>
+        <div class="row">
+            <h2>Transformación de texto</h2>
+            <p class="text-lowercase">texto en minúsculas..(text-lowercase)</p>
+            <p class="text-uppercase">TEXTO EN MAYÚSCULAS..(text-uppercase)</p>
+            <p class="text-capitalize">texto con palabra inicial en mayusculas..(text-capitalize)</p>
+        </div>
+        <div class="row">
+            <h2>Tamaño de fuente font-size </h2>
+            <p class="fs-1">.fs-1 text</p>
+            <p class="fs-2">.fs-2 text</p>
+            <p class="fs-3">.fs-3 text</p>
+            <p class="fs-4">.fs-4 text</p>
+            <p class="fs-5">.fs-5 text</p>
+            <p class="fs-6">.fs-6 text</p>
+        </div>
+        <div class="row">
+            <h2>Peso de fuente y cursiva(gruesor) font-weight</h2>
+            <p class="fw-bold"> Texto en negrita..</p>
+            <p class="fw-bolder">Texto de peso más en negrita (relativo al elemento principal)..</p>
+            <p class="fw-normal">Texto de peso normal..</p>
+            <p class="fw-light">Texto ligero.</p>
+            <p class="fw-lighter">Texto más ligero (relativo al elemento principal)..</p>
+            <p class="fst-italic">Texto en cursiva Italic 60° ..</p>
+            <p class="fst-normal">Texto con estilo de fuente normal..</p>
+        </div>
+        <div class="row">
+            <h2>separacion entre cada fila de linea </h2>
+            <p class="lh-1 text-primary">(lh-1) Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Cras mattis pannenkoek purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh
+                ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            <p class="lh-sm text-secondary">(lh-sm) Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Cras mattis pannenkoek purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh
+                ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            <p class="lh-base text-info">(lh-base) Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Cras mattis pannenkoek purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh
+                ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            <p class="lh-lg text-black">(lh-lg) Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Cras mattis pannenkoek purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh
+                ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        </div>
+        <div class="row">
+            <h2>separacion entre palabras </h2>
+            <p class="font-monospace ">Esto es en monoespacio</p>
+        </div>
+        <div class="row">
+            <h2>recorte de palabra</h2>
+            <p class="col-1 bg-primary text-white my-1 text-truncate">Esto es en monoespacio</p>
+        </div>
+        <div class="row">
+            <h2>Restablecer color</h2>
+            <p>"" Texto silenciado con un <a href="#" class="text-reset">enlace de restablecimiento .</a>.
+                <p class="text-muted">"text-muted" Texto silenciado con un <a href="#" class="text-reset">enlace de restablecimiento .</a>. </p>
+        </div>
+        <div class="row">
+            <h2>Decoración de texto</h2>
+            <p class="text-decoration-underline"> "text-decoration-underline" Este texto tiene una línea debajo.</p>
+            <p class="text-decoration-line-through"> "text-decoration-line-through" Este texto tiene una línea que lo atraviesa.</p>
+            <a href="#" class="text-decoration-none"> "text-decoration-none" Enlace sin decoración de texto </a>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+    </div>
+
+    <!-- Option 1: Bootstrap, Popper -->
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="jquery.js"></script>
+</body>
+
+</html>

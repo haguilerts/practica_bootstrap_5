@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <title>card</title>
+    <style>
+        h1 {
+            background-color: red;
+            text-align: center;
+        }
+        
+        [class|="col"] {
+            border: .5px solid black;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .container {
+            border: .2px solid red;
+            margin-bottom: 2em;
+        }
+        
+        .row {
+            padding-top: 5px;
+            border-bottom: 0.1px solid blue;
+        }
+        
+        .altura {
+            height: 5em;
+            text-align-last: center;
+        }
+        
+        .imgcss {
+            height: 8em;
+            width: auto;
+            background-image: url(img/9.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 1em 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>card</h1>
+    <div class="container ">
+        <div class="row col-12 w-auto mw-100">
+            <h2>card-(body/header/footer/deck/group/columns)</h2>
+            <div class=" col-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/9.png" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">titulo de targeta
+                            <h6 class="card-subtitle mb-2 text-muted">subtitulo de targeta</h6>
+                        </h5>
+                        <p class="card-text">Algún TEXTO de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                        <p class="card-body">Este es un texto dentro del cuerpo de una tarjeta. <a href="#" class="card-link"> link</a> </p>
+
+                        <a href="#" class="btn btn-primary">ve a algun lugar</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-6 w-auto ">
+                <h2>Lista de grupo</h2>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Bienvenido..</div>
+                    <img src="img/10.png" class="card-img-top" alt="img">
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1) listas de bootstrap </li>
+                        <li class="list-group-item">2) list-group-item</li>
+                        <li class="list-group-item">3) <a href="#" class="btn btn-primary">Enviar..</a></li>
+                    </ul>
+                    <div class="card-footer"> Gracias por la visita...
+                        <p class="card-footer text-muted"> 2 days ago </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs card-header-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card mb-3" style="width: 18rem;">
+                <img src="img/kirito_and_asuna.png" class="card-img-top" alt="kirito and ausna">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                <img src="img/kirito_&&_asuna.png" class="card-img-bottom" alt="...">
+            </div>
+            <div class="card bg-dark text-white">
+                <img src="img/iry.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay  ">
+                    <h5 class="card-title text-center h-25 " style="font-size: 150%; font-weight: 700;">League of Legends "Ahri laugh"</h5>
+                    <p class="card-text fs-6 p-2" style="background-color: rgba(27, 17, 4, 0.521);">Ahri es una vastaya conectada de forma innata al poder latente de Runaterra, y es capaz de convertir la magia en orbes de energía pura. Le gusta jugar con su presa, manipulando sus emociones antes de devorar su esencia de vida. </p>
+                    <p class="card-text text-center " style="background-color: rgba(36, 29, 21, 0.521);">Last updated 3 mins ago</p>
+                </div>
+                <h5 class="card-footer">Giovanny Aguilar Rojas...</h5>
+
+            </div>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/Iry(GIF).gif" alt="..." style="width: 100% ;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Ahri laugh</h5>
+                            <p class="card-text">Ahri es una vastaya conectada de forma innata al poder latente de Runaterra, y es capaz de convertir la magia en orbes de energía pura.</p>
+                            <p class="card-text"><small class="text-muted">10/01/2021 | 16:08 hs</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card-footer bg-transparent border-success">13/01/2021 </div>
+                </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Secondary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card-footer bg-transparent border-success">13/01/2021 </div>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card-footer bg-transparent border-success">13/01/2021 </div>
+
+                </div>
+            </div>
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Danger card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer bg-transparent border-success">13/01/2021 </div>
+            </div>
+            <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Warning card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer bg-transparent border-success">13/01/2021 </div>
+            </div>
+            <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Info card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer bg-transparent border-success">13/01/2021 </div>
+            </div>
+            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                <img src="img/carta.png" alt="img" class="card-img">
+                <div class="card-body card-img-overlay">
+                    <div class="card-header text-center">Carta de Presentacion</div>
+                    <h5 class="card-title text-center">ARG</h5>
+                    <p class="card-text m-5 overflow-auto " style="height: 3.1em; ">Hola Papá quiero hoy decirte cuánto te quiero y cuánto significas para mí, cada día que pasa voy creciendo y me voy dando cuenta de la gran persona que eres. </p>
+                </div>
+                <div class="card-footer bg-transparent border-success">saludos, Muchas Gracias!</div>
+            </div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Dark card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer bg-transparent border-success">footer 13/01/2021 16:35</div>
+
+            </div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class=" imgcss"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap, Popper -->
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="jquery.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
