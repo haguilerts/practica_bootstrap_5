@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+
+    <title>fexbox</title>
+    <style>
+        h1 {
+            background-color: red;
+            text-align: center;
+        }
+        
+        [class|="col"] {
+            /*border: .5px solid black;*/
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .container {
+            border: .2px solid red;
+            margin-bottom: 2em;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .row {
+            padding-top: 5px;
+            border-bottom: 0.1px solid blue;
+        }
+        
+        .alto {
+            border: 1px solid red;
+            height: 5em;
+            background-color: cyan;
+        }
+        
+        .borde {
+            border: 1px solid white;
+        }
+        
+        .borde_black {
+            border: 1px solid rgb(37, 6, 6);
+        }
+        
+        .caja {
+            width: auto;
+            height: 3em;
+            background-color: rgb(55, 196, 109);
+        }
+        
+        .caja1 {
+            padding: .5em;
+            width: auto;
+            height: 3em;
+        }
+        /*opacity*/
+        
+        .o-0 {
+            opacity: 0;
+        }
+        
+        .o-25 {
+            opacity: .25;
+        }
+        
+        .o-50 {
+            opacity: .5;
+        }
+        
+        .o-75 {
+            opacity: .75;
+        }
+        
+        .o-100 {
+            opacity: 1;
+        }
+        
+        @media (min-width: 576px) {
+            .opacity-sm-0 {
+                opacity: 0;
+            }
+            .opacity-sm-25 {
+                opacity: .25;
+            }
+            .opacity-sm-50 {
+                opacity: .5;
+            }
+            .opacity-sm-75 {
+                opacity: .75;
+            }
+            .opacity-sm-100 {
+                opacity: 1;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .opacity-md-0 {
+                opacity: 0;
+            }
+            .opacity-md-25 {
+                opacity: .25;
+            }
+            .opacity-md-50 {
+                opacity: .5;
+            }
+            .opacity-md-75 {
+                opacity: .75;
+            }
+            .opacity-md-100 {
+                opacity: 1;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .opacity-lg-0 {
+                opacity: 0;
+            }
+            .opacity-lg-25 {
+                opacity: .25;
+            }
+            .opacity-lg-50 {
+                opacity: .5;
+            }
+            .opacity-lg-75 {
+                opacity: .75;
+            }
+            .opacity-lg-100 {
+                opacity: 1;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .opacity-xl-0 {
+                opacity: 0;
+            }
+            .opacity-xl-25 {
+                opacity: .25;
+            }
+            .opacity-xl-50 {
+                opacity: .5;
+            }
+            .opacity-xl-75 {
+                opacity: .75;
+            }
+            .opacity-xl-100 {
+                opacity: 1;
+            }
+        }
+        
+        @media (min-width: 1400px) {
+            .opacity-xxl-0 {
+                opacity: 0;
+            }
+            .opacity-xxl-25 {
+                opacity: .25;
+            }
+            .opacity-xxl-50 {
+                opacity: .5;
+            }
+            .opacity-xxl-75 {
+                opacity: .75;
+            }
+            .opacity-xxl-100 {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>fexbox</h1>
+    <h3>d-flex: d-[sm/md/lg/xl/xxl-{inline}]-flex</h3>
+    <h3>#padre:
+        <h4><strong>*Justify-content-(x): </strong>
+            <p>-----justify-content-[stard/center/end/between/around/evenly], justify-content-(sm/md/lg/xl/xxl)-[stard...] </p>
+        </h4>
+        <h4><strong>*Align-items-(y): </strong>
+            <p>-----align-items-[stard(stretch)/baseline/center/end], align-items-(sm/md/lg/xl/xxl)-[stard...] </p>
+        </h4>
+        <h4><strong>*align-content-(y) flex-wrap :</strong>
+            <p>-----align-content-[stard(stretch)/center/end/between/evenly], align-content-(sm/md/lg/xl/xxl)-[stard...] </p>
+        </h4>
+    </h3>
+    <h3>#hijo:
+        <h4><strong>*align-self-(y): </strong>
+            <p>-----align-self-[stard(stretch)/baseline/center/end/auto], align-self-(sm/md/lg/xl/xxl)-[stard...] </p>
+        </h4>
+    </h3>
+    <h2>-start | -center | -end | / -sm | -md | -lg | -xl | -xxl</h2>
+    <div class="container-fluid">
+        <div class="row col-12">
+            <div class="col-10 d- alto justify-content-around">
+                <!-- al colocar flex al elemento padre, sus hijos e convierten flexibles uno a lado dle otro -->
+                <div class="p-2 bg-success text-light borde">soy 1° contenedor flexbox!</div>
+                <div class="p-2 bg-success text-light borde">soy 2° contenedor flexbox!</div>
+                <div class="p-2 bg-success text-light borde">soy 3° contenedor flexbox!</div>
+            </div>
+            <div class="col-3 d-flex flex-column h-100 alto">
+                <div class="p-2 bg-primary text-light borde">1 flex-column!</div>
+                <div class="p-2 bg-primary text-light borde">2 flex-column!</div>
+                <div class="p-2 bg-primary text-light borde">3 flex-column!</div>
+            </div>
+            <div class="col-3 d-flex flex-column-reverse ">
+                <div class="p-2 bg-info text-light borde">1 flex-column-reverse!</div>
+                <div class="p-2 bg-info text-light borde">2 flex-column-reverse!</div>
+                <div class="p-2 bg-info text-light borde">3 flex-column-reverse!</div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+
+        </div>
+        <div class="row">
+            <h2>padre: justify-content-start(x) / hijo: align-self-(Y)</h2>
+            <div class="col-12 d-flex justify-content-start  alto" style="height: 10em;">
+                <div class="p-2 bg-secondary text-light borde caja align-self-start">1 start</div>
+                <div class="p-2 bg-secondary text-light borde caja align-self-center">2 start</div>
+                <div class="p-2 bg-secondary text-light borde caja align-self-end">3 start</div>
+            </div>
+            <h2>Padre: justify-content-center(x) / padre: align-items-center(y) </h2>
+            <div class="col-12 d-flex justify-content-center align-items-stretch alto  " style="height: 10em;">
+                <div class="p-2 bg-secondary text-light borde caja ">1 center</div>
+                <div class="p-2 bg-secondary text-light borde caja">2 center</div>
+                <div class="p-2 bg-secondary text-light borde caja">3 center</div>
+            </div>
+            <h2>Padre: justify-content-end (X) / align-self-(Y)</h2>
+            <div class="col-12 d-flex justify-content-end  alto " style="height: 10em;">
+                <div class="p-2 bg-secondary text-light borde caja align-self-end ">1 end</div>
+                <div class="p-2 bg-secondary text-light borde caja align-self-center">2 end</div>
+                <div class="p-2 bg-secondary text-light borde caja align-self-stard">3 end</div>
+            </div>
+            <h2>padre: justify-content-around /hijo: align-self-[sm..]-center </h2>
+            <div class="col-12 d-flex justify-content-around  alto  " style="height: 10em;">
+                <div class="p-2 bg-secondary text-light borde align-self-sm-center caja ">1 around</div>
+                <div class="p-2 bg-secondary text-light borde align-self-md-center caja">2 around</div>
+                <div class="p-2 bg-secondary text-light borde align-self-lg-center caja">3 around</div>
+            </div>
+            <h2>padre: justify-content-between/ padre: justify-content-[md]-center </h2>
+            <div class="col-12 d-flex justify-content-between justify-content-md-center  alto  " style="height: 10em;">
+                <div class="p-2 bg-secondary text-light borde caja ">1 between</div>
+                <div class="p-2 bg-secondary text-light borde caja">2 between</div>
+                <div class="p-2 bg-secondary text-light borde caja">3 between</div>
+            </div>
+            <h2>padre: justify-content-evenly/ padre: align-items-[lg]-center</h2>
+            <div class="col-12 d-flex justify-content-evenly align-items-lg-center  alto  " style="height: 10em;">
+                <div class="p-2 bg-secondary text-light borde caja">1 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja ">2 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">3 evenly</div>
+            </div>
+            <h2>padre: align-content-center(y) flex-wrap / | /center/end/between/evenly</h2>
+            <div class="col-12 d-flex  align-content-around flex-wrap alto  " style="height: 10em;">
+                <div class="p-2 bg-secondary text-light borde caja">1 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja ">2 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">3 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">1 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja ">2 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">3 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">1 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja ">2 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">3 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">1 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja ">2 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">3 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">1 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja ">2 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">3 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">1 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja ">2 evenly</div>
+                <div class="p-2 bg-secondary text-light borde caja">3 evenly</div>
+            </div>
+        </div>
+        <div class="row ">
+            <h2>flex-[wrap,nowrap]: flex-[sm..]-[wrap,reverse ]</h2>
+            <div class="col-12 d-flex alto flex-wrap" style="height: 10em;">
+                <div class=" bg-success text-light borde caja1 ms-5 ">1 caja</div>
+                <div class=" bg-success text-light borde caja1 ms-5">2 caja</div>
+                <div class=" bg-success text-light borde caja1 ms-5">3 caja</div>
+                <div class=" bg-success text-light borde caja1 ms-5">4 caja</div>
+                <div class=" bg-success text-light borde caja1 ms-5">5 caja</div>
+                <div class=" bg-success text-light borde caja1 ms-5">6 caja</div>
+                <div class=" bg-success text-light borde caja1 ms-5">7 caja</div>
+                <div class=" bg-success text-light borde caja1 ms-5">8 caja</div>
+                <div class=" bg-success text-light borde caja1 ms-5 ">9 caja</div>
+
+            </div>
+        </div>
+        <div class="row">
+            <h2> hijo: flex-fill(completa los espacios sobrantes con proporcion de su ancho) </h2>
+            <div class="d-flex alto">
+                <div class="p-2 flex-fill  borde caja">Flex item with a lot of content</div>
+                <div class="p-2   borde caja">Flex item</div>
+                <div class="p-2 flex-fill  borde caja">Flex item</div>
+            </div>
+            <h2>hijo:.flex-[sm...]-{grow}-[0,1] flex-grow(completa los espacios sobrantes con proporcion de su iguales para cada uno)</h2>
+            <div class="d-flex bd-highlight">
+                <div class="p-2 flex-grow-1 borde caja">Flex item</div>
+                <div class="p-2 borde caja">Flex item</div>
+                <div class="p-2 flex-grow-1  borde caja">Third flex item</div>
+            </div>
+            <h2>hijo: flex-shrink() / .flex-[sm...]-{shrink}-[0,1]</h2>
+            <div class="d-flex bd-highlight">
+                <div class="p-2 w-100 borde caja">Flex item</div>
+                <div class="p-2 .flex-md-shrink-1 borde caja">Flex item</div>
+            </div>
+            <h2>margin: auto; horizontal</h2>
+            <div class="d-flex borde_black mb-3">
+                <div class="p-2 borde caja">Flex item</div>
+                <div class="p-2 borde caja">Flex item</div>
+                <div class="p-2 borde caja">Flex item</div>
+            </div>
+            <div class="d-flex  mb-3 borde_black">
+                <div class="me-auto p-2 borde caja">me-auto</div>
+                <div class="p-2 borde caja">Flex item</div>
+                <div class="p-2 borde caja">Flex item</div>
+            </div>
+            <div class="d-flex  mb-3 borde_black">
+                <div class="p-2 borde caja">Flex item</div>
+                <div class="p-2 borde caja">Flex item</div>
+                <div class="ms-auto p-2 borde caja">me-auto</div>
+            </div>
+            <h2>margin: auto; vertical</h2>
+            <div class="d-flex align-items-start flex-column borde_black mb-3 " style="height: 200px;">
+                <div class="mb-auto p-2 borde caja">mb-auto</div>
+                <div class="p-2 borde caja">Flex item</div>
+                <div class="p-2 borde caja">Flex item</div>
+            </div>
+
+            <div class="d-flex align-items-end flex-column borde_black mb-3" style="height: 200px;">
+                <div class="p-2 borde caja">Flex item</div>
+                <div class="p-2 borde caja">Flex item</div>
+                <div class="mt-auto p-2 borde caja">mb-auto</div>
+            </div>
+            <h2>order: .order-[sm..]-[0..5]</h2>
+            <div class="d-flex flex-nowrap bd-highlight">
+                <div class="order-5 p-2 borde caja">1 flex item</div>
+                <div class="order-4 p-2 borde caja">2 flex item</div>
+                <div class="order-3 p-2 borde caja">3 flex item</div>
+                <div class="order-2 p-2 borde caja">4 flex item</div>
+                <div class="order-1 p-2 borde caja">5 flex item</div>
+                <div class="order-0 p-2 borde caja">6 flex item</div>
+            </div>
+            <h2>order: .order-[sm..]-[first(1°)/last(ultimo)] / opacity-[sm..]-[0, 25, 5, 75, 1]</h2>
+            <div class="d-flex flex-nowrap bd-highlight">
+                <div class="order-last p-2 borde caja">0 order-last</div>
+                <div class=" p-2 borde caja opacity-sm-75">1 flex o-sm-75</div>
+                <div class=" p-2 borde caja opacity-md-75">2 flex o-md-75</div>
+                <div class=" p-2 borde caja opacity-lg-75">3 flex o-lg-75</div>
+                <div class=" p-2 borde caja opacity-xl-75">4 flex o-xl-75</div>
+                <div class="order- p-2 borde caja opacity-xxl-75">5 flex o-xxl-75</div>
+                <div class="order-first p-2 borde caja">6 order-first</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="jquery.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+
+    <!-- https://github.com/SonarSystems/Bootstrap-5-Tutorial-Source-Code/blob/master/Code/%5B3%5D%20Components/Toasts/index.html -->
+</body>
+
+</html>
