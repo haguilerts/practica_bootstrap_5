@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>card</title>
     <style>
         h1 {
@@ -175,28 +175,43 @@
         </div>
         <div class="row">
             <h2>desplegable</h2>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">logo</a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 ">
+                <div class=" w-100 container-fluid">
+
+                    <a class="navbar-brand " href="#">logo</a>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown ">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse navbar-expand-lg justify-content-end " id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav w-auto ">
+                            <li class="nav-item dropdown d-lg-flex">
+                                <!--  -->
                                 <a class="nav-link dropdown-toggle" href="#" id="interes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Bienvenido..
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="interes">
                                     <li><a class="dropdown-item" href="#">interes</a></li>
                                 </ul>
+                                <!--  -->
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
+                                    Dropdown..
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                     <li><a class="dropdown-item" href="#">sobre mi</a></li>
                                     <li><a class="dropdown-item" href="#">historia</a></li>
-                                    <li><a class="dropdown-item" href="#">contacto</a></li>
+
+                                    <li class="navbar-nav dropdown d-lg-flex">
+                                        <a class="nav-link dropdown-toggle ms-2" href="#" id="mas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        mas..
+                                        </a>
+                                        <ul class=" nav-item dropdown-menu dropdown-menu-dark" aria-labelledby="mas">
+                                            <li><a class="dropdown-item" href="#">1)_sobre_mi</a></li>
+                                            <li><a class="dropdown-item" href="#">2)_historia</a></li>
+                                            <li><a class="dropdown-item" href="#">3)_contacto</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -396,11 +411,11 @@
 
 
     <!-- Option 1: Bootstrap, Popper -->
-    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script> -->
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="jquery.js"></script>
     <!-- JavaScript Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 
 </html>

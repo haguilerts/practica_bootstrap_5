@@ -58,7 +58,7 @@
         <br>
         <div class="col-12">
             <h2>"a / button / input" </h2>
-            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <a class="btn btn-primary btn-outline-info text-light" href="#" role="button">Link</a>
             <button class="btn btn-primary" type="submit">Button</button>
             <input class="btn btn-primary" type="button" value="Input">
             <input class="btn btn-primary" type="submit" value="Submit">
@@ -67,7 +67,7 @@
         <br>
         <div class="col-12">
             <h2>Botones de contorno: "btn btn-outline-(primary/secondary/success/danger..)"</h2>
-            <button type="button" class="btn btn-outline-primary w-25">Primary</button>
+            <button type="button" class="btn btn-outline-primary w-25">btn-outline-primary</button>
             <button type="button" class="btn btn-outline-secondary">Secondary</button>
             <button type="button" class="btn btn-outline-success">Success</button>
             <button type="button" class="btn btn-outline-danger">Danger</button>
@@ -79,17 +79,17 @@
         <div class="col-12">
             <h2>tamanio</h2>
             <button type="button" class="btn btn-secondary ">normal</button>
-            <button type="button" class="btn btn-primary btn-sm">pequeño</button>
-            <button type="button" class="btn btn-primary btn-md">mediano</button>
-            <button type="button" class="btn btn-primary btn-lg">grande</button>
+            <button type="button" class="btn btn-primary btn-sm"> btn-sm</button>
+            <button type="button" class="btn btn-primary btn-md">btn-md</button>
+            <button type="button" class="btn btn-primary btn-lg">btn-lg</button>
 
         </div>
         <div class="col-12">
             <h2>botones deshabilitado</h2>
-            <button type="button" class="btn btn-primary btn-lg disabled">Button Deshabilitado</button>
-            <button type="button" class="btn btn-secondary btn-lg" disabled>Button Deshabilitado</button>
-            <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-            <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+            <button type="button" class="btn btn-primary btn-lg disabled"> .disabled</button>
+            <button type="button" class="btn btn-secondary btn-lg" disabled>disabled</button>
+            <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true"> link / .disabled</a>
+            <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link / .disabled</a>
         </div>
         <div class="row">
             <div class="d-grid gap-1">
@@ -113,23 +113,24 @@
         </div>
         <div class="col-12">
             <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
-            <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+            <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">.Active toggle button</button>
             <button type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">Disabled toggle button</button>
         </div>
         <div class="col-12">
-            <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
-            <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+            <a href="#" class="btn btn-info btn-outline-primary text-light" role="button" data-bs-toggle="button">Toggle link</a>
+            <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">.Active toggle link</a>
             <a href="#" class="btn btn-primary disabled" tabindex="-1" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
         </div>
 
         <div>
             <h2>checkbox</h2>
             <input type="checkbox" id="scaless" name="scales" checked>
-            <label for="scaless">Scales</label>
+            <label for="scaless">checkbox habilitado</label>
             <input type="checkbox" id="scales" name="scales">
-            <label for="scales">Scales</label>
+            <label for="scales">checkbox Deshabilitado</label>
         </div>
         <div class="col-12">
+            <h2>:hover : btn btn-outline-primary</h2>
             <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
                 <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
                 <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
@@ -193,7 +194,7 @@
                 </div>
                 <div class="input-group">
                     <div class="input-group-text" id="btnGroupAddon">@</div>
-                    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                    <input type="text" class="form-control btn btn-outline-secondary" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
                 </div>
             </div>
 
@@ -212,17 +213,17 @@
         </div>
         <div class="col-12">
             <div class="col-12">
-                <h2>alineamiento horizontal</h2>
+                <h2>alineamiento horizontal / btn-group</h2>
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                     <button type="button" class="btn btn-primary">1</button>
                     <button type="button" class="btn btn-primary">2</button>
                     <div class=" row btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             Desplegables
                             </button>
-                        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                            <li><a class="dropdown-item" href="#">1) Enlace Desplegable</a></li>
-                            <li><a class="dropdown-item" href="#">2) Enlace Desplegable</a></li>
+                        <ul class="dropdown-menu bg-transparent" aria-labelledby="btnGroupDrop1">
+                            <li class="btn btn-primary btn-outline-info text-light"><a class="dropdown-item " href="#">1) Enlace Desplegable</a></li>
+                            <li class="btn btn-primary btn-outline-info text-light"><a class="dropdown-item " href="#">2) Enlace Desplegable</a></li>
                         </ul>
                     </div>
                 </div>
@@ -282,7 +283,7 @@
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="jquery.js"></script>
     <!-- JavaScript Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 
 </html>
